@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [];
+        for(let i = 0; i < 10; i++){
+            arr1[i] = prompt("Nhập giá trị thứ " + i + ":"); 
+        }
+        document.write(arr1 + "<br>");
+
+        let arr2 = [];
+        for(let j = 0; j < 10; j++){
+            arr2[j] = prompt("Nhập giá trị thứ " + j + ":"); 
+        }
+        document.write(arr2 + "<br>");
+        let arr = [arr1,arr2];
+        document.write(arr)
+
+    </script>
+</body>
+</html>
