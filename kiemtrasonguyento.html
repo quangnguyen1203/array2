@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(number){
+            let prime = true;
+            if(number<2){
+                prime = false;
+            } else if ( number == 2 ){
+                prime = true;
+            } else if ( number%2 == 0){
+                prime = false;
+            } else {
+                for ( let i=3; i<Math.sqrt(number); i+=2){
+                    if (number%i == 0){
+                        prime = false;
+                        break;
+                    }
+                }
+            }
+            if (prime == true){
+                document.write(number + " là số nguyên tố ");
+            } else {
+                document.write(number + " không phải là số nguyên tố ")
+            }
+        }
+        function isPrime2(){
+            let number = +prompt("nhập số kiểm tra");
+            isPrime(number);
+        }
+        isPrime2();
+    </script>
+</body>
+</html>

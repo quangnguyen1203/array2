@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="english">
+    <button onclick="dich()">Dịch</button>
+    <p id ="vietnam"></p>
+    <script>
+        let english = ["bear","bird","cat","dog","chicken","cow"];
+        let vietnam = [
+            "con gấu",
+            "con chim",
+            "con mèo",
+            "con chó",
+            "con gà",
+            "con bò"
+            ];
+        function dich() {
+            let add = document.getElementById("english").value;
+            let x = english.indexOf(add);
+            if (x >= 0) {
+                document.getElementById("vietnam").innerHTML = vietnam[x];
+            } else { 
+                document.getElementById("vietnam").innerHTML = "Chưa cập nhật !";
+            }
+        }
+    </script>
+</body>
+    <!-- <input type="text" id='tienganh'>
+    <input type="button" value="Dịch" onclick="dich()">
+    <script>
+        let tieng_anh = document.getElementById("tienganh");
+        let TA = ["bear","bird","cat","dog","chicken","cow"]
+        let TV = [
+            "con gấu",
+            "con chim",
+            "con mèo",
+            "con chó",
+            "con gà",
+            "con bò"
+            ]
+        function dich(){
+            for(let i = 0; i < TA.length; i++){
+                if(TA[i] == tieng_anh.value){
+                    document.getElementById("tieng_viet").innerHTML = TV[i];
+                }
+                break;
+            }
+        }
+    </script> -->
+</html>
