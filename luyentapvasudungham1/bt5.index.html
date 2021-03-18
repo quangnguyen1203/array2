@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button style="width: 100px; height: 30px" onclick="inputName()">Tên</button>
+    <p id="displayName"></p>
+    <button style="width: 100px; height: 30px" onclick="inputStar()">Sao</button>
+    <p id="displayStar"></p> -->
+    <button onclick="nhapten()">Tên</button>
+    <p id="hienthiten"></p>
+    <button onclick="sao()">Sao</button>
+    <p id="hienthisao"></p>
+</body>
+<script>
+    // let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    // let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    // let userName = "";
+    // function inputName() {
+    //     let userName = prompt("Nhập tên ngôi sao:");
+    //     document.getElementById("displayName").innerHTML = userName;
+    //     return userName;
+    // }
+
+    // function inputStar() {
+    //     let i = arr1.indexOf(userName);
+    //     if (i >= 0) {
+    //         document.getElementById("displayStar").innerHTML = arr2[i];
+    //     } else {
+    //         document.getElementById("displayStar").innerHTML = "Chưa cập nhật!";
+    //     }
+    // }
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let ten = "";
+    function nhapten() {
+        ten = prompt("Nhập tên ngôi sao:");
+        document.getElementById("hienthiten").innerHTML = ten;
+        return ten;
+    }
+    function sao() {
+        let i = arr1.indexOf(ten);
+        if (i >= 0) {
+            document.getElementById("hienthisao").innerHTML = arr2[i];
+        } else {
+            document.getElementById("hienthisao").innerHTML = "Chưa cập nhật!";
+        }
+    }
+</script>
+</html>
