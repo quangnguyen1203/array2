@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = parseInt(prompt(" Nhập số nguyên thứ nhất: "));
+        let number2 = parseInt(prompt(" Nhập số nguyên thứ hai: "));
+        let number3 = parseInt(prompt(" Nhập số nguyên thứ ba: "));
+        function minNumber(number1,number2,number3){
+            if (number1<=number2 && number1<=number3){
+                alert("số nhỏ nhất là: " + number1);
+            } else if (number2<number3){
+                alert("sô nhỏ nhất là:" + number2); 
+            } else { 
+                alert("số nhỏ nhất là:" + number3);
+            }
+        }
+        minNumber(number1,number2,number3);
+    </script>
+</body>
+</html>

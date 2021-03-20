@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function perimeterCircle(number){
+            return 2*number*Math.PI;
+        }
+        function areaCircle(number){
+            return number*number*Math.PI;
+            
+        }
+        let number = parseInt(prompt("Nhập bán kính của hình tròn: "));
+        let perimeter = perimeterCircle(number);
+        
+        let area = areaCircle(number);
+
+        document.write(" Bán kính của hình tròn là: " + number + "<br>")
+
+        document.write(" Chu vi của hình tròn là: " + perimeter + "<br>");
+
+        document.write(" Diện tích của hình tròn là: " + area);
+    </script>
+</body>
+</html>
